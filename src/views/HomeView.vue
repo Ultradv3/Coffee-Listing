@@ -48,14 +48,14 @@ p {
 }
 
 .contenedor {
-  padding: 10px 40px 10px 40px;
+  padding: 10px 30px 40px 30px;
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 10%;
   right: 10%;
   bottom: 10%;
   width: 80%;
-  height: 1000px;
+  height: max-content;
   margin-bottom: 40px;
   z-index: 9999;
   border-radius: 20px;
@@ -65,8 +65,7 @@ p {
 .items-conatiner {
   display: flex;
   height: 90%;
-  margin-left: 80px;
-  margin-right: 80px;
+
   margin-top: 40px;
   flex-direction: column;
   align-items: center;
