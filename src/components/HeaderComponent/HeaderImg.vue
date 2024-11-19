@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <img src="/public/bg-cafe.jpg" alt="" />
+    <img src="/bg-cafe.jpg" alt="" />
   </div>
 </template>
 

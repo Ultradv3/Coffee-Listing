@@ -1,5 +1,5 @@
 <template>
-  <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-10 mt-10 sm:grid-cols-1 relative">
+  <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-10 mt-10 mb-10 sm:grid-cols-1 relative">
     <div v-for="item in datos" :key="item.id">
       <div class="relative cursor-pointer hover:scale-105 duration-300">
         <div
@@ -19,14 +19,14 @@
       </div>
       <div class="ratin flex gap-2 mt-2 relative">
         <div class="flex" v-if="vote(item.votes)">
-          <img src="/public/Star_fill.svg" alt="" />
+          <img src="/Star_fill.svg" alt="" />
           <p>
             {{ item.rating }}
             <span class="text-gray-500 font-semibold">({{ item.votes }} votes)</span>
           </p>
         </div>
         <div class="flex" v-else>
-          <img src="/public/Star.svg" alt="" />
+          <img src="/Star.svg" alt="" />
           <p>
             {{ item.rating }}
             <span class="text-gray-500 font-semibold">No ratings</span>

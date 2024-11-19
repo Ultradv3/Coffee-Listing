@@ -7,11 +7,13 @@ import Card from '/src/components/card/Card.vue'
     <div class="contenedor">
       <div class="items-conatiner">
         <div class="title pb-10">
-          <h1 class="text-3xl">Our Collection</h1>
-          <p>
+          <h1 class="text-3xl z-10">Our Collection</h1>
+          <p class="z-10">
             Introducing our Coffee Collection, a selection of unique coffees from different roast
             types and origins, expertly roasted in small batches and shipped fresh weekly.
           </p>
+          <img src="/vector.svg" alt="" class="absolute z-0 right-auto top-10" />
+
           <div class="buttons">
             <button class="hover:bg-[#6F757C] w-32 h-10 rounded-lg transition-colors duration-300">
               All Products
@@ -53,14 +55,21 @@ p {
   top: 10%;
   left: 10%;
   right: 10%;
-  bottom: 10%;
+
   width: 80%;
   height: max-content;
-  margin-bottom: 40px;
   z-index: 9999;
   border-radius: 20px;
   background-color: #1c1d1f;
-  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    gap: 10px;
+  }
+  .title {
+    width: 300px;
+  }
 }
 .items-conatiner {
   display: flex;
