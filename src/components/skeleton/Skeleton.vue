@@ -20,3 +20,7 @@
 
 </template>
 
+<script setup >
+console.log('Loading...')
+</script>
+
